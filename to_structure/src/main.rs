@@ -1,8 +1,9 @@
 mod hide;
-use crate::hide::{A, B};  
+use crate::hide::a::*;
+use crate::hide::b::*;
 
 fn main() {
-    let a: A = A {x: 1,};
-    let b: B = B {x: 0,};
-    println!("a.x={} \nb.x={}", a.x, b.x);
+    let a1: A = A {x: 1,};
+    let b1: B = B {x: 0,};
+    println!("a1.x={} \nb1.x={}", a1.x, b1.x);
 }
