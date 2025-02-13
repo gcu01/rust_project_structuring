@@ -1,11 +1,13 @@
-
-     struct A {
-         x: i32,
+mod hide{
+    pub struct A {
+        pub x: i32,
     }
 
-     struct B {
-         x: usize,
+    pub struct B {
+        pub x: usize,
     }   
+}
+use crate::hide::{A, B};  
 
 fn main() {
     let a: A = A {x: 1,};
