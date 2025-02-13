@@ -1,12 +1,4 @@
-mod hide{
-    pub struct A {
-        pub x: i32,
-    }
-
-    pub struct B {
-        pub x: usize,
-    }   
-}
+mod hide;
 use crate::hide::{A, B};  
 
 fn main() {
